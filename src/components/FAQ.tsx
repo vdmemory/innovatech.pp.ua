@@ -71,7 +71,7 @@ const FAQ = () => {
                             <AccordionItem
                                 key={index}
                                 value={`item-${index}`}
-                                className="border-border"
+                                className="border-b border-[#2196f3]"
                             >
                                 <AccordionTrigger className="text-left text-foreground hover:text-[#2196f3]">
                                     {faq.question}
