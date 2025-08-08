@@ -1,15 +1,15 @@
 export const configCompany = {
-    name: 'Intelli Code',
-    info: 'ТОВ " ОТЕН БАЙТ" ЄДРПОУ 45742787',
-    infoEng: 'LLC "OTEN BYTE" 45742787',
-    email: 'genov2025@ukr.net',
-    phone: '+380734067728',
-    address: 'Україна, 61170, місто Харків, вул. Валентинівська, будинок 20',
-    addressEng: 'Ukraine, 61170, Kharkiv, Valentynivska St, 20',
+    name: 'Innovatech',
+    info: 'ТОВ "ВЕЛВІКС  ІТ" ЄДРПОУ 45763571',
+    infoEng: 'LLC "VELVIX IT" 45763571',
+    email: 'ukhin1611@ukr.net',
+    phone: '+380933400323',
+    address: ' Україна, 03039  місто Київ, вул.  Голосіївська, буд.7, корпус 3',
+    addressEng: 'Ukraine, 03039 Kyiv, Holosiivska St, 7, building 3',
 
     facebook: 'https://www.facebook.com/',
     instagram: 'https://www.instagram.com/',
     linkedin: 'https://www.linkedin.com/',
     whatsapp: 'https://www.whatsapp.com/',
-    prom: 'https://prom.ua/ua/c4125167-tov-oten-bajt.htm',
+    prom: 'https://prom.ua/',
 }
