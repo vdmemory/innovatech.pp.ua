@@ -1,10 +1,29 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import SocialLinks from '@/components/SocialLinks.tsx'
 import { configCompany } from '@/lib/configCompany.ts'
 import { useLanguage } from '@/contexts/LanguageContext.tsx'
 
 const Footer = () => {
     const { t, language } = useLanguage()
+
+    const backgroundRef = useRef<HTMLDivElement>(null)
+
+    useEffect(() => {
+        const handleMouseMove = (e: MouseEvent) => {
+            if (!backgroundRef.current) return
+
+            const x = e.clientX / window.innerWidth
+            const y = e.clientY / window.innerHeight
+
+            backgroundRef.current.style.transform = `translate(${x * -35}px, ${y * -35}px)`
+        }
+
+        window.addEventListener('mousemove', handleMouseMove)
+
+        return () => {
+            window.removeEventListener('mousemove', handleMouseMove)
+        }
+    }, [])
 
     const handleNavClick = (page: string) => (e: React.MouseEvent) => {
         e.preventDefault()
@@ -60,9 +79,10 @@ const Footer = () => {
     ]
 
     return (
-        <footer className="w-full py-16 px-6 md:px-12 border-t border-border bg-transparent relative overflow-hidden">
+        <footer className="w-full py-16 px-6 md:px-12 border-t border-border bg-green-700 relative overflow-hidden">
             {/* Background Elements */}
             <div
+                ref={backgroundRef}
                 className="absolute inset-[-45px] z-0 transition-transform duration-500 ease-out"
                 style={{
                     willChange: 'transform',
@@ -79,7 +99,7 @@ const Footer = () => {
                     <div className="md:col-span-2 space-y-6">
                         <div className="relative flex items-center space-x-2 py-1 gap-2">
                             <img
-                                src="logo.png"
+                                src="btn.png"
                                 alt="Logo"
                                 className="h-[60px] w-auto object-contain"
                             />

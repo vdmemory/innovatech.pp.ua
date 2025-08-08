@@ -158,7 +158,7 @@ const CalendarEmbed = () => {
 
                             <button
                                 type="submit"
-                                className="mt-8 px-8 py-3 bg-green-600 text-white hover:bg-green-600/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed uppercase"
+                                className="mt-8 px-8 py-3 bg-green-700 text-white hover:bg-green-600/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed uppercase"
                             >
                                 {t('form.submit')}
                             </button>

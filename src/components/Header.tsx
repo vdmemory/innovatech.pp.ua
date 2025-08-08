@@ -65,7 +65,7 @@ const Header = () => {
                     className="w-auto md:w-auto relative flex items-center space-x-2 px-6 py-1 backdrop-blur-md gap-2 bg-[--header] cursor-pointer"
                 >
                     <img
-                        src="logo.png"
+                        src="btn.png"
                         alt="Logo"
                         className="h-[60px] w-auto object-contain"
                     />

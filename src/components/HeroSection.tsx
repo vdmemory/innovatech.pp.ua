@@ -52,10 +52,22 @@ const HeroSection = () => {
             ></div>
 
             <div className="absolute inset-0 overflow-hidden">
-                <div className="absolute top-20 left-20 w-40 h-40 bg-primary rounded-full" />
+                <motion.div
+                    animate={{ y: [0, -10, 0] }}
+                    transition={{ duration: 2, repeat: Infinity }}
+                    className="absolute top-20 left-20 w-40 h-40 bg-primary rounded-full"
+                />
                 <div className="absolute bottom-20 right-20 w-60 h-60 bg-secondary transform rotate-45" />
-                <div className="absolute top-40 right-40 w-32 h-32 bg-primary-muted" />
-                <div className="absolute bottom-28 left-60 w-32 h-32 rounded-full bg-[--header]" />
+                <motion.div
+                    animate={{ x: [0, -10, 0] }}
+                    transition={{ duration: 3, repeat: Infinity }}
+                    className="absolute top-40 right-40 w-32 h-32 bg-primary-muted"
+                />
+                <motion.div
+                    animate={{ x: [0, -10, 0] }}
+                    transition={{ duration: 1, repeat: Infinity }}
+                    className="absolute bottom-28 left-60 w-32 h-32 rounded-full bg-[--header]"
+                />
             </div>
             <div className="container px-4 mx-auto text-center relative z-10">
                 <motion.div
