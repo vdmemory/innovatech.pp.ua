@@ -118,7 +118,7 @@ const CalendarEmbed = () => {
                                             id="message"
                                             name="message"
                                             required
-                                            className="mt-1 border-2 border-green-600 focus:border-green-300"
+                                            className="mt-1 border-2 border-green-600 focus:border-green-300 rounded-none"
                                             placeholder={t(
                                                 'form.message.placeholder',
                                             )}
